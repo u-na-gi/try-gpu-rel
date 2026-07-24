@@ -3,6 +3,7 @@ import triton
 from const import DEVICE
 from kernel import add
 
+
 @triton.testing.perf_report(
     triton.testing.Benchmark(
         x_names=["size"],  # Argument names to use as an x-axis for the plot.
